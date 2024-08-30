@@ -21,6 +21,6 @@ public class Solution {
         }
         int numsLength = nums.length / 2;
 
-        return set.size() >= numsLength ? numsLength : set.size();
+        return Math.min(set.size(), numsLength);
     }
 }
